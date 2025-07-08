@@ -234,7 +234,7 @@ void handleClient(int client_fd, const string &file_path)
 int main(int argc, char *argv[])
     {
         // setting file path if given as argument
-        string file_path = "/mnt/c/Users/Nakul Jain/Downloads";
+        string file_path = "Your_Directory_Here";// default directory
         if (argc == 3 && argv[1] == "--directory")
         {
             file_path = argv[2];
