@@ -2,13 +2,15 @@
 
 A multithreaded HTTP server in C++ using raw sockets. Supports basic routing, file handling, and concurrency.
 
+
 ## 📚 Table of Contents
 
-- [Features](#-features)
-- [Build](#-build)
-- [Run](#-run)
-- [Supported Routes](#-supported-routes)
-- [Usage Examples](#-usage-examples)
+- [Features](#features)
+- [Build](#build)
+- [Run](#run)
+- [Supported Routes](#supported-routes)
+- [Usage Examples](#usage-examples)
+
 
 ## Features
 
