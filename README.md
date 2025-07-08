@@ -4,16 +4,20 @@ A multithreaded HTTP server in C++ using raw sockets. Supports basic routing, fi
 
 
 ## 📚 Table of Contents
-
+- [Concurrency](#concurrency)
 - [Features](#features)
 - [Build](#build)
 - [Run](#run)
 - [Supported Routes](#supported-routes)
 - [Usage Examples](#usage-examples)
 
+## Concurrency
+
+This server uses `std::thread` from the C++ Standard Library (POSIX-based under the hood on Linux) to handle multiple client connections simultaneously. Each incoming connection is served in a separate thread, enabling concurrent request processing and efficient multitasking.
+
 
 ## Features
-
+- Handles multiple clients concurrently using POSIX threads (`std::thread`)
 - `GET /echo/<message>` – returns `<message>`
 - `GET /files/<filename>` – reads file from specified directory
 - `POST /files/<filename>` – writes data to file
